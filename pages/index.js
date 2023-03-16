@@ -21,6 +21,7 @@ export default function Home() {
       <div>
         <Hero {...heroProps} />
         {/** Other sections */}
+        
       </div>
     </>
   );
