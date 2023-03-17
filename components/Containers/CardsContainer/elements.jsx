@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-export const StyledCardsContainer = styled(({ topMargin = 0, bottomMargin = 0, ...props }) => <div {...props} />)`
+export const StyledCardsContainer = styled(({...props }) => <ul {...props} />)`
 display: flex;
 flex-direction: column;
 gap: 1.5rem;
+padding: 0;
 list-style: none;
 `;

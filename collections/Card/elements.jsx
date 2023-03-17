@@ -23,11 +23,8 @@ const cardStyleMapper = {
   Pitch: pitch,
 };
 
-export const StyledTextContainer = styled(({ ...props }) => (
-  <div {...props} />
-))`
-padding: 1rem 3rem 1rem 0;
-
+export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
+  padding: 1rem 3rem 1rem 0;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => (
@@ -36,25 +33,33 @@ export const StyledImageContainer = styled(({ ...props }) => (
   padding: 3rem;
 `;
 
-export const StyledTitle = styled((props) => <SectionSubheading {...props} />)`
+export const StyledTitle = styled(({ ...props }) => (
+  <SectionSubheading {...props} />
+))`
   font-weight: 600;
   margin: 0;
   color: black;
+  transition: color 0.3s;
 `;
 
-export const StyledDescription = styled((props) => (
+export const StyledDescription = styled(({ ...props }) => (
   <SectionParagraph {...props} />
 ))`
-margin: 0;
+  margin: 0;
 `;
 
-export const StyledBoldText = styled((props) => (
-    <SectionParagraph {...props} />
-  ))`
-  display:inline;
-  margin:0;
-  font-weight:600;
-  `;
+export const StyledBoldText = styled(({ ...props }) => (
+  <SectionParagraph {...props} />
+))`
+  display: inline;
+  margin: 0;
+  font-weight: 600;
+`;
+
+export const StyledAnchor = styled(({ ...props }) => <a {...props} />)`
+  text-decoration: none;
+  color: unset;
+`;
 
 export const StyledCard = styled(({ ...props }) => <li {...props} />)`
   display: flex;
@@ -62,6 +67,7 @@ export const StyledCard = styled(({ ...props }) => <li {...props} />)`
   justify-content: center;
 
   border-radius: 5px;
+  transition: border 0.3s;
   ${({ title }) => cardStyleMapper[title]}
   &:hover {
     cursor: pointer;

@@ -17,15 +17,15 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   color: black;
   text-align: center;
   margin: 3rem auto;
-  font-family: sans-serif;
 `;
 
 export const StyledContentContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  background-image: url("img/background.png");
-  max-width: 80%;
   margin: 0 auto;
+  max-width: 75%;
+
+  background-image: url("img/background.png");
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -36,7 +36,7 @@ export const StyledContentContainer = styled(({ ...props }) => (
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    max-width:100%
+    max-width: 100%;
   }
 `;
 
@@ -48,7 +48,7 @@ export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
 export const StyledDescription = styled((props) => (
   <SectionSubheading {...props} />
 ))`
-  margin: 1.563rem 0 0;
+  margin: 0;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => (
