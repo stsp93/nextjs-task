@@ -14,6 +14,24 @@ const mainProps = {
   description: 'Strengthen your onboarding process',
 }
 
+const cards = [
+  {
+    title:'Brief',
+  description: 'Strengthen your onboarding process',
+  image: { src: "/img/icon-brief.png", alt: "", width: 60, height: 60 },
+  },
+  {
+    title:'Search',
+  description: 'Strengthen your onboarding process',
+  image: { src: "/img/icon-search.png", alt: "", width: 60, height: 60 },
+  },
+  {
+    title:'Pitch',
+  description: 'Strengthen your onboarding process',
+  image: { src: "/img/icon-pitch.png", alt: "", width: 60, height: 60 },
+  },
+]
+
 
 
 export default function Home() {
@@ -30,7 +48,7 @@ export default function Home() {
       <div>
         <Hero {...heroProps} />
         {/** Other sections */}
-        <Main {...mainProps} />
+        <Main {...mainProps} cards={cards} />
       </div>
     </>
   );
