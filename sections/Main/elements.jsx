@@ -9,14 +9,12 @@ export const StyledContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
 ))`
   display: block;
-  max-width: 90%;
   margin: 0 auto;
   margin-top: 4rem;
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   color: black;
-  width: 40%;
   text-align: center;
   margin: 3rem auto;
   font-family: sans-serif;
@@ -26,12 +24,20 @@ export const StyledContentContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
   background-image: url("img/background.png");
+  max-width: 80%;
+  margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 5rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    max-width:100%
+  }
 `;
 
 export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
@@ -48,7 +54,5 @@ export const StyledDescription = styled((props) => (
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  max-width: 32.03rem;
-  max-height: 65rem;
-  width: 300px;
+  min-width: 20rem;
 `;

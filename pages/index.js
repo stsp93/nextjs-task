@@ -17,17 +17,17 @@ const mainProps = {
 const cards = [
   {
     title:'Brief',
-  description: 'Strengthen your onboarding process',
+  description: 'Complete brief writing or simple guidance on what to include, we\'ve got you covered',
   image: { src: "/img/icon-brief.png", alt: "", width: 60, height: 60 },
   },
   {
     title:'Search',
-  description: 'Strengthen your onboarding process',
+  description: 'In-depth agency search covering, criteria matching, door knocking and due-diligence vetting',
   image: { src: "/img/icon-search.png", alt: "", width: 60, height: 60 },
   },
   {
     title:'Pitch',
-  description: 'Strengthen your onboarding process',
+  description: 'Compregensive pitch management, including comms, diary management and pitch hosting',
   image: { src: "/img/icon-pitch.png", alt: "", width: 60, height: 60 },
   },
 ]
