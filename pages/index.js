@@ -14,21 +14,21 @@ const mainProps = {
   description: 'Strengthen your onboarding process',
 }
 
-const cards = [
+const cardsProps = [
   {
     title:'Brief',
   description: 'Complete brief writing or simple guidance on what to include, we\'ve got you covered',
-  image: { src: "/img/icon-brief.png", alt: "", width: 60, height: 60 },
+  image: { src: "/img/icon-brief.png", alt: "", width: 125, height: 125 },
   },
   {
     title:'Search',
   description: 'In-depth agency search covering, criteria matching, door knocking and due-diligence vetting',
-  image: { src: "/img/icon-search.png", alt: "", width: 60, height: 60 },
+  image: { src: "/img/icon-search.png", alt: "", width: 125, height: 125 },
   },
   {
     title:'Pitch',
   description: 'Compregensive pitch management, including comms, diary management and pitch hosting',
-  image: { src: "/img/icon-pitch.png", alt: "", width: 60, height: 60 },
+  image: { src: "/img/icon-pitch.png", alt: "", width: 125, height: 125 },
   },
 ]
 
@@ -48,7 +48,7 @@ export default function Home() {
       <div>
         <Hero {...heroProps} />
         {/** Other sections */}
-        <Main {...mainProps} cards={cards} />
+        <Main {...mainProps} cardsProps={cardsProps} />
       </div>
     </>
   );

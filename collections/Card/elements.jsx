@@ -4,17 +4,17 @@ import { SectionParagraph, SectionSubheading } from "../../components";
 const brief = css`
   background-color: ${({ theme }) => theme.grayF9};
   border: 2px solid ${({ theme }) => theme.grayF9};
-  width: 30rem;
+  width: 28rem;
 `;
 const search = css`
   background-color: ${({ theme }) => theme.grayF4};
   border: 2px solid ${({ theme }) => theme.grayF4};
-  width: 32rem;
+  width: 30rem;
 `;
 const pitch = css`
   background-color: ${({ theme }) => theme.grayF1};
   border: 2px solid ${({ theme }) => theme.grayF1};
-  width: 34rem;
+  width: 32rem;
 `;
 
 const cardStyleMapper = {
@@ -25,12 +25,15 @@ const cardStyleMapper = {
 
 export const StyledTextContainer = styled(({ ...props }) => (
   <div {...props} />
-))``;
+))`
+padding: 1rem 3rem 1rem 0;
+
+`;
 
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  padding: 2rem;
+  padding: 3rem;
 `;
 
 export const StyledTitle = styled((props) => <SectionSubheading {...props} />)`
@@ -42,13 +45,22 @@ export const StyledTitle = styled((props) => <SectionSubheading {...props} />)`
 export const StyledDescription = styled((props) => (
   <SectionParagraph {...props} />
 ))`
+margin: 0;
 `;
+
+export const StyledBoldText = styled((props) => (
+    <SectionParagraph {...props} />
+  ))`
+  display:inline;
+  margin:0;
+  font-weight:600;
+  `;
 
 export const StyledCard = styled(({ ...props }) => <li {...props} />)`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2rem 1rem 0;
+
   border-radius: 5px;
   ${({ title }) => cardStyleMapper[title]}
   &:hover {

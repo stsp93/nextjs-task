@@ -10,8 +10,7 @@ import {
   StyledTitle,
 } from "./elements";
 
-export const Main = ({ title, description, image, cards }) => {
-  console.log(image);
+export const Main = ({ title, description, image, cardsProps }) => {
   return (
     <StyledContainer>
       {/*Section Title */}
@@ -31,7 +30,7 @@ export const Main = ({ title, description, image, cards }) => {
           />
         </StyledImageContainer>
         {/* Cards */}
-        <CardsContainer cards={cards} />
+        <CardsContainer cardsProps={cardsProps} />
       </StyledContentContainer>
     </StyledContainer>
   );
