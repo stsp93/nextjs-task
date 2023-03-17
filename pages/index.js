@@ -17,17 +17,17 @@ const mainProps = {
 const cardsProps = [
   {
     title:'Brief',
-  description: 'Complete brief writing or simple guidance on what to include, we\'ve got you covered',
+  description: 'Complete brief writing or simple guidance on what to include, we\'ve got you covered.',
   image: { src: "/img/icon-brief.png", alt: "", width: 125, height: 125 },
   },
   {
     title:'Search',
-  description: 'In-depth agency search covering, criteria matching, door knocking and due-diligence vetting',
+  description: 'In-depth agency search covering, criteria matching, door knocking and due-diligence vetting.',
   image: { src: "/img/icon-search.png", alt: "", width: 125, height: 125 },
   },
   {
     title:'Pitch',
-  description: 'Compregensive pitch management, including comms, diary management and pitch hosting',
+  description: 'Comprehensive pitch management, including comms, diary management and pitch hosting.',
   image: { src: "/img/icon-pitch.png", alt: "", width: 125, height: 125 },
   },
 ]

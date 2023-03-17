@@ -9,8 +9,7 @@ export const StyledContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
 ))`
   display: block;
-  margin: 0 auto;
-  margin-top: 4rem;
+  margin: 4rem auto;
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
