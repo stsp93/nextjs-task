@@ -57,15 +57,15 @@ export const StyledBoldText = styled(({ ...props }) => (
 `;
 
 export const StyledAnchor = styled(({ ...props }) => <a {...props} />)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   text-decoration: none;
   color: unset;
 `;
 
 export const StyledCard = styled(({ ...props }) => <li {...props} />)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   border-radius: 5px;
   transition: border 0.3s;
   ${({ title }) => cardStyleMapper[title]}

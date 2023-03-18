@@ -21,8 +21,8 @@ export const Card = ({ image, title, description, href = "#" }) => {
   const boldTextIndex = description.indexOf(boldText);
 
   return (
-    <StyledAnchor href={href}>
-      <StyledCard title={title}>
+    <StyledCard title={title}>
+      <StyledAnchor href={href}>
         <StyledImageContainer>
           <Image
             src={image.src}
@@ -40,7 +40,7 @@ export const Card = ({ image, title, description, href = "#" }) => {
             {description.slice(boldTextIndex).replace(boldText, "")}
           </StyledDescription>
         </StyledTextContainer>
-      </StyledCard>
-    </StyledAnchor>
+      </StyledAnchor>
+    </StyledCard>
   );
 };
