@@ -4,17 +4,17 @@ import { SectionParagraph, SectionSubheading } from "../../components";
 const brief = css`
   background-color: ${({ theme }) => theme.grayF9};
   border: 2px solid ${({ theme }) => theme.grayF9};
-  width: 28rem;
+  width: 90%;
 `;
 const search = css`
   background-color: ${({ theme }) => theme.grayF4};
   border: 2px solid ${({ theme }) => theme.grayF4};
-  width: 30rem;
+  width: 95%;
 `;
 const pitch = css`
   background-color: ${({ theme }) => theme.grayF1};
   border: 2px solid ${({ theme }) => theme.grayF1};
-  width: 32rem;
+  width: 100%;
 `;
 
 const cardStyleMapper = {
@@ -24,13 +24,13 @@ const cardStyleMapper = {
 };
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
-  padding: 1rem 3rem 1rem 0;
+  padding: 1rem 2rem 1rem 0;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  padding: 3rem;
+  padding: 2rem;
 `;
 
 export const StyledTitle = styled(({ ...props }) => (
@@ -66,6 +66,7 @@ export const StyledAnchor = styled(({ ...props }) => <a {...props} />)`
 `;
 
 export const StyledCard = styled(({ ...props }) => <li {...props} />)`
+  max-width: 38rem;
   border-radius: 5px;
   transition: border 0.3s;
   ${({ title }) => cardStyleMapper[title]}

@@ -53,5 +53,5 @@ export const StyledDescription = styled((props) => (
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  min-width: 20rem;
+  width: 20rem;
 `;
