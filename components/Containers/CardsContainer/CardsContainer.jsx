@@ -1,8 +1,8 @@
 import { StyledCardsContainer } from "./elements";
 import { Card } from '~/collections';
 
-export const CardsContainer = ({ cardsProps }) => {
+export const CardsContainer = ({ cards }) => {
   return <StyledCardsContainer  >
-    {cardsProps.map(card => <Card key={card.title} {...card} />)}
+    {cards.map(card => <Card key={card.title} {...card} />)}
   </StyledCardsContainer>;
 };
